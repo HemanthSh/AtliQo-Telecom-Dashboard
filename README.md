@@ -1,4 +1,11 @@
-# AtliQo Telecom Analysis - Power BI
+# **Telecom Data Analysis: Evaluating the Impact of 5G on AtliQo**
+
+Welcome to the Telecom Data Analysis project! This repository contains a detailed analysis of AtliQo's telecom data using Power BI Desktop and Excel. Our primary focus is on comparing key performance indicators (KPIs) before and after the launch of 5G in May 2022. The insights gained from this analysis aim to help AtliQo optimize its internet plans and recover its active user base.
+
+## **Project Description**
+
+### **About AtliQo**
+AtliQo is one of India's leading telecom providers, recognized for its innovative services and widespread coverage. In May 2022, AtliQo, along with other telecom providers, launched its 5G plans, marking a significant milestone in its service offerings. However, post-launch, the company observed a decline in both active users and revenue growth. Concerned about these trends, AtliQo's management tasked their analytics team with delivering a comparative analysis of KPIs between the pre- and post-5G launch periods. The goal is to derive actionable insights that could guide the company in regaining its market position and enhancing user engagement.
 
 This project was undertaken as part of the November Codebasics Resume Project Challenge.
 
@@ -8,43 +15,45 @@ This project was undertaken as part of the November Codebasics Resume Project Ch
 ## Live Dashboard
 [Live Dashboard](https://app.powerbi.com/view?r=eyJrIjoiMGU1MmYzMzItNWE2NC00NDRmLTljOTItZTU3YmNjMWRlYzE1IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9)
 
+### **Dataset Overview**
+The dataset comprises six CSV files, each providing essential information across different dimensions:
 
-## Problem Statement
+- **dim_cities**: Contains details about the cities, including city codes and names.
+- **dim_date**: Provides date-related information, including month names, 5G launch categorization (before/after), and time periods for comparison.
+- **dim_plan**: Lists various internet plans offered by AtliQo along with their descriptions.
+- **fact_atliqo_metrics**: Captures key metrics such as revenue, ARPU (Average Revenue Per User), active users, and unsubscribed users across different cities.
+- **fact_market_share**: Provides data on AtliQo's market share compared to competitors in different cities.
+- **fact_plan_revenue**: Contains revenue details for various internet plans offered by AtliQo in different cities.
 
-AtliQo, a leading telecom provider in India, launched its 5G plans in May 2022, alongside other telecom providers. Following this launch, the management observed a decline in active users and revenue growth.
+### **Project Objectives**
+- **KPI Comparison**: Analyze and compare KPIs such as revenue, active users, and market share before and after the 5G launch.
+- **Identify Trends**: Detect trends in user behavior and revenue changes post-5G launch.
+- **Plan Optimization**: Explore ways to optimize AtliQo's internet plans to attract more active users and increase revenue.
+- **Market Share Analysis**: Understand AtliQo's position in the market relative to its competitors.
 
-To address these issues, AtliQo's business director requested the analytics team to generate a comparison report of key performance indicators (KPIs) for the periods before and after the 5G launch. The goal is to understand the performance differences between these periods and gain insights that will help recover the active user rate and improve other key metrics. Additionally, the management is looking to optimize their internet plans to attract more active users.
+### **Tools and Technologies Used**
+- **Power BI Desktop**: Used for data visualization and creating interactive dashboards.
+- **Excel**: Utilized for data cleaning, manipulation, and preliminary analysis.
+- **Power Query**: Employed for data transformation and connection to multiple data sources.
 
-**Peter Pandey**, a junior data analyst, has been assigned this task.
 
-## Task
+### **Dataset Structure**
+- **dim_cities**: City codes and names.
+- **dim_date**: Date details, 5G launch categorization, and comparison periods.
+- **dim_plan**: Internet plans and their descriptions.
+- **fact_atliqo_metrics**: Monthly data on revenue, ARPU, active users, and unsubscribed users.
+- **fact_market_share**: Market share data of AtliQo and its competitors.
+- **fact_plan_revenue**: Revenue generated from different internet plans.
 
-As Peter Pandey, perform the following tasks:
+### **Key Insights**
+- **Revenue Decline Post-5G**: Identified a drop in revenue and active users post-5G launch, necessitating strategic changes.
+- **ARPU Trends**: Observed variations in ARPU across different cities, indicating areas for targeted improvements.
+- **Market Share Shifts**: Analyzed market share fluctuations, highlighting competitors' performance relative to AtliQo.
 
-1. **Create a Comparison Report:**
-   - Use the provided mock-up as a starting point. Note that the mock-up was created by a business user with limited dashboarding experience, so it's crucial to enhance the representation of insights.
+### **Contributing**
+Contributions to this project are welcome! Feel free to fork the repository, make your enhancements, and submit a pull request.
 
-2. **Target Audience:**
-   - The dashboard is intended for top-level management. Therefore, it should be self-explanatory and easy to understand.
 
-3. **Generate Additional Insights:**
-   - Go beyond the metrics listed in the mock-up to provide relevant insights that support the analysis and decision-making process.
-
-## Project Structure
-
-- **Power BI Dashboard:**
-  - A comprehensive Power BI dashboard that includes multiple pages for different analyses:
-    - Dashboard Overview
-    - Market Share Analysis
-    - Revenue & Plan Performance
-    - City Comparison Performance
-
-- **Data Sources:**
-  - `Dim_city` table: Contains city names and city codes.
-  - `Dim_Date` table: Contains month, date, and time period.
-  - `Plan` table: Contains plan name, description, data/day, and validity.
-  - `Fact_atliq_metrics` table: Contains date, company, AtliQo revenue, active revenue per user (ARPU), active users, and unsubscribed users.
-  - `market_share` table: Contains city code, total market value, company, and market share percent.
-  - `fact_plan_revenue` table: Contains city, plan, plan revenue, and date.
-
+### **Acknowledgments**
+Special thanks to the Codebasics team for providing the dataset and to the open-source community for the tools that made this analysis possible.
 
